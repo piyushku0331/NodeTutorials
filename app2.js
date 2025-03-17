@@ -12,7 +12,7 @@ app.get('/about',(req,res)=>{
               `);
 })
 
-app.all('*',(res,req)=>{
+app.all('*',(req,res)=>{
     res.status(404).send(`<h1>Hi this page is not available</h1>`);
 })
 
